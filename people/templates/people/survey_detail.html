@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block pagetitle %}Survey Detail{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="span5">
+      <dl>
+        <dt>Date start to use python </dt>
+        <dd>{% firstof object.when_start %}</dd>
+        <dt>How much python do yo know</dt>
+        <dd>{% firstof object.get_degree_display %}</dd>   
+        <dt>Main Environment</dt>
+        <dd>{% firstof object.get_context_display %}_{% firstof object.environment %}</dd>
+        <dt>Main Problem</dt>
+        <dd>{% firstof object.get_problem_display %}_{% firstof object.problem_description %}</dd>
+        <dt>User Type</dt>
+        <dd>{% firstof object.get_user_type_display %}_{% firstof object.user_type_description %}</dd>
+      </dl>
+    </div>
+</div>
+ 
+{% endblock %}
