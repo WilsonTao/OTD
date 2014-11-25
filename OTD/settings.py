@@ -66,7 +66,7 @@ WSGI_APPLICATION = 'OTD.wsgi.application'
 DATABASES = {
     'default': {
 	'ENGINE': 'django.contrib.gis.db.backends.postgis',
-	'NAME': 'geodjango2',
+	'NAME': 'geodjango',
 	'USER': 'geo',
 	'PASSWORD': '242213',
 	'HOST': 'localhost',
