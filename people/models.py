@@ -146,3 +146,4 @@ class Survey(models.Model):
             to implement per user object check
         '''
         return (self.user == user) or not self.user
+
